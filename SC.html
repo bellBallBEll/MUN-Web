@@ -230,17 +230,56 @@
         <section class="plain-section" id="topics">
             <h2>Topics</h2>
             <ul>
-                <li><strong>The Situation in Ukraine:</strong> Addressing the ongoing conflict, humanitarian concerns, and pathways to peace.</li>
-                <li><strong>Cybersecurity Threats:</strong> Developing international frameworks to combat cyber attacks and protect critical infrastructure.</li>
-                <li><strong>Climate Security:</strong> Examining the intersection of climate change and international security, including resource conflicts and migration.</li>
+                <li><strong>Regulating Private Military Contractors in International Conflicts</strong></li>
+                <li><strong>Addressing Escalating Regional Instability in the Sahel</strong></li>
             </ul>
         </section>
 
         <section class="plain-section" id="reports">
             <h2>Chair Reports</h2>
-            <p><strong>Opening Session Report:</strong> The Security Council committee convened for its first session, with delegates introducing their positions and initial stances on the topics. The chair noted strong engagement and encouraged active participation in working groups.</p>
-            <p><strong>Mid-Conference Update:</strong> Significant progress has been made on the Ukraine topic, with several draft resolutions proposed. The cybersecurity discussion has highlighted the need for binding international agreements. Climate security debates are ongoing, with focus on preventive measures.</p>
-            <p><strong>Closing Remarks:</strong> The committee successfully passed two resolutions and engaged in productive debate. Chairs commend delegates for their diplomatic efforts and look forward to future MUN conferences.</p>
+            <div style="margin-bottom: 1.5rem;">
+                <p style="margin-bottom: 0.5rem;"><strong>PDF 1:</strong></p>
+                <input type="file" id="pdfInput1" accept=".pdf" style="display: none;">
+                <button onclick="document.getElementById('pdfInput1').click()" style="padding: 0.65rem 1rem; background: #f2c14e; color: #1f4e79; border: none; border-radius: 4px; cursor: pointer; font-weight: 600;">Upload PDF</button>
+                <button id="downloadBtn1" onclick="downloadPdf(1)" style="padding: 0.65rem 1rem; background: #f2c14e; color: #1f4e79; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; margin-left: 0.5rem; display: none;">Download PDF</button>
+            </div>
+            <div>
+                <p style="margin-bottom: 0.5rem;"><strong>PDF 2:</strong></p>
+                <input type="file" id="pdfInput2" accept=".pdf" style="display: none;">
+                <button onclick="document.getElementById('pdfInput2').click()" style="padding: 0.65rem 1rem; background: #f2c14e; color: #1f4e79; border: none; border-radius: 4px; cursor: pointer; font-weight: 600;">Upload PDF</button>
+                <button id="downloadBtn2" onclick="downloadPdf(2)" style="padding: 0.65rem 1rem; background: #f2c14e; color: #1f4e79; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; margin-left: 0.5rem; display: none;">Download PDF</button>
+            </div>
+            <script>
+                let uploadedFiles = { 1: null, 2: null };
+                document.getElementById('pdfInput1').addEventListener('change', function(e) {
+                    uploadedFiles[1] = e.target.files[0];
+                    if (uploadedFiles[1]) {
+                        document.getElementById('downloadBtn1').style.display = 'inline-block';
+                    }
+                });
+                document.getElementById('pdfInput2').addEventListener('change', function(e) {
+                    uploadedFiles[2] = e.target.files[0];
+                    if (uploadedFiles[2]) {
+                        document.getElementById('downloadBtn2').style.display = 'inline-block';
+                    }
+                });
+                function downloadPdf(num) {
+                    if (uploadedFiles[num]) {
+                        const url = URL.createObjectURL(uploadedFiles[num]);
+                        const link = document.createElement('a');
+                        link.href = url;
+                        link.download = uploadedFiles[num].name;
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        URL.revokeObjectURL(url);
+                    }
+                }
+            </script>
+        </section>
+
+        <section class="plain-section" id="chairs">
+            <h2>Chairs</h2>
         </section>
     </main>
 
