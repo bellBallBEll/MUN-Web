@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UN Security Council</title>
+    <title>JCIDMUN SC</title>
     <style>
         :root {
             --primary: #1f4e79;
@@ -234,7 +234,27 @@
             margin: 0 auto;
         }
 
-        .plain-section {
+        .intro {
+            text-align: center;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .download-btn:hover {
+            background-color: #e6b63a;
+        }
             background: transparent;
             border-radius: 0;
             padding: 0;
@@ -252,7 +272,7 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 2rem;
-            padding: 0 1.5rem 2rem;
+            padding: 3rem 1.5rem 2rem;
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -319,7 +339,7 @@
 /* Grid layout */
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -379,7 +399,8 @@
               <a href="SC.html#sc">Security Council</a>
             </div>
           </div>
-          <a href="#schedule">Schedule</a>
+          <a href="About-Us.html">About</a>
+          <a href="Address-and-Schedule.html">Schedule</a>
         </nav>
       </div>
 
@@ -399,14 +420,14 @@
                 </h2>
                 <p>This topic addresses the growing role of Private Military and Security Contractors (PMSCs) in armed conflicts, where they often operate in legal grey areas with limited accountability. The Security Council must consider frameworks to regulate their activities, prevent the abuse of human rights, and ensure states and companies are held responsible for violations such as unlawful killings, mercenary activity, and destabilising interventions.</p>
 
-                <p><a href="ecosoc1.pdf" download style="color: var(--accent); text-decoration: underline;">Download Chair Report</a></p>
+                <p><a href="ecosoc1.pdf" download class="download-btn">Download Chair Report</a></p>
             </section>
 
             <section class="plain-section topic-card" id="cybersecurity-topic">
                 <h2>Addressing Escalating Regional Instability in the Sahel</h2>
                 <p></p>This topic focuses on the interconnected security, political, and humanitarian crises across the Sahel region, including armed insurgencies, coup d'états, and the expansion of terrorist groups linked to ISIS and Al-Qaeda. The Security Council is tasked with coordinating international responses to restore state authority, protect civilians, and address the root causes such as resource scarcity, climate change, and weak governance.</p>
         
-                <p><a href="Sahel_Region_Tension.pdf" download style="color: var(--accent); text-decoration: underline;">Download Chair Report</a></p>
+                <p><a href="Sahel_Region_Tension.pdf" download class="download-btn">Download Chair Report</a></p>
             </section>
         </div>
     </main>
@@ -423,18 +444,12 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="#">Home</a>
-        <a href="#">Committees</a>
       </div>
 
       <div class="footer-col">
         <h4>Information</h4>
-        <a href="#">Address & Schedule</a>
-        <a href="#">About Us</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="#">Email Us</a>
+        <a href="Address-and-Schedule.html">Address & Schedule</a>
+        <a href="About-Us.html">About Us</a>
       </div>
 
     </div>
