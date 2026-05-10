@@ -144,6 +144,43 @@
       margin-bottom: 3rem;
     }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 1.5rem;
+    }
+
+    table th {
+      background-color: var(--accent);
+      color: var(--text-dark);
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text);
+    }
+
+    table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .day-header {
+      background-color: rgba(31, 78, 121, 0.3);
+      font-weight: 600;
+      color: var(--accent);
+    }
+
     footer {
       text-align: center;
       color: var(--surface);
@@ -245,10 +282,98 @@
 
     <section class="section">
       <h2>Event Schedule</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p><strong>Opening Ceremony:</strong> May 16, 2024 - 9:00 AM</p>
-      <p><strong>Committee Sessions:</strong> May 16-17, 2024 - 10:00 AM - 5:00 PM</p>
-      <p><strong>Closing Ceremony:</strong> May 17, 2024 - 6:00 PM</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="day-header">
+            <td colspan="2">Day 1 - 8:00 AM to 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>7:30 AM - 7:50 AM</td>
+            <td>Everyone arriving, final checks to make sure that everything is in order</td>
+          </tr>
+          <tr>
+            <td>8:00 AM - 8:30 AM</td>
+            <td>Opening Ceremony</td>
+          </tr>
+          <tr>
+            <td>8:35 AM - 10:30 AM</td>
+            <td>Committee in session</td>
+          </tr>
+          <tr>
+            <td>10:30 AM - 10:45 AM</td>
+            <td>Break</td>
+          </tr>
+          <tr>
+            <td>10:45 AM - 12:00 PM</td>
+            <td>Committee in session, approval panel can be open until 12 PM</td>
+          </tr>
+          <tr>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Lunch</td>
+          </tr>
+          <tr>
+            <td>1:00 PM - 3:30 PM</td>
+            <td>Committee in session</td>
+          </tr>
+          <tr>
+            <td>3:30 PM - 3:45 PM</td>
+            <td>Break</td>
+          </tr>
+          <tr>
+            <td>3:45 PM - 5:00 PM</td>
+            <td>Committee in session</td>
+          </tr>
+          <tr class="day-header">
+            <td colspan="2">Day 2 - 8:00 AM to 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>7:30 AM - 7:50 AM</td>
+            <td>Everyone arriving, final checks to make sure that everything is in order</td>
+          </tr>
+          <tr>
+            <td>8:00 AM - 8:30 AM</td>
+            <td>Opening Ceremony</td>
+          </tr>
+          <tr>
+            <td>8:35 AM - 10:30 AM</td>
+            <td>Committee in session</td>
+          </tr>
+          <tr>
+            <td>10:30 AM - 10:45 AM</td>
+            <td>Break</td>
+          </tr>
+          <tr>
+            <td>10:45 AM - 12:00 PM</td>
+            <td>Committee in session, approval panel can be open until 12 PM</td>
+          </tr>
+          <tr>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Lunch</td>
+          </tr>
+          <tr>
+            <td>1:00 PM - 3:30 PM</td>
+            <td>Committee in session</td>
+          </tr>
+          <tr>
+            <td>3:30 PM - 3:45 PM</td>
+            <td>Break</td>
+          </tr>
+          <tr>
+            <td>3:45 PM - 5:30 PM</td>
+            <td>Committee in session</td>
+          </tr>
+          <tr>
+            <td>5:30 PM - 6:00 PM</td>
+            <td>Closing & Awarding Ceremony</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="section">

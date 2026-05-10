@@ -274,6 +274,24 @@
             color: rgba(255, 255, 255, 0.92);
         }
 
+        .download-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .download-btn:hover {
+            background-color: #e6b63a;
+        }
+
         @media (min-width: 720px) {
             .topics-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -379,7 +397,8 @@
               <a href="SC.html#sc">Security Council</a>
             </div>
           </div>
-          <a href="#schedule">Schedule</a>
+          <a href="About-Us.html">About</a>
+          <a href="Address-and-Schedule.html">Schedule</a>
         </nav>
       </div>
 
@@ -400,20 +419,20 @@
                 </h2>
                 <p>This topic addresses the ongoing global crisis of human trafficking and modern slavery, including forced labor, sexual exploitation, and debt bondage. It focuses on identifying and protecting victims, disrupting financial flows and corruption, and using technology ethically to prevent trafficking, while emphasising the need for coordinated international action under the Human Rights Council.</p>
  
-                <p><a href="JCIDMUNII_HRC_ChairReport2_Trafficking.pdf" download style="color: var(--accent); text-decoration: underline;">Download Chair Report</a></p>
+                <p><a href="JCIDMUNII_HRC_ChairReport2_Trafficking.pdf" download class="download-btn">Download Chair Report</a></p>
             </section>
 
             <section class="plain-section topic-card" id="cybersecurity-topic">
                 <h2>Ensuring Refugee Rights and the Responsibility of Host Countries</h2>
                 <p>This topic examines the legal and humanitarian obligations of host countries toward the growing global refugee population, which exceeds 100 million displaced people. It explores challenges such as uneven burden sharing, legal and procedural gaps in asylum systems, and the need for durable solutions like voluntary repatriation, resettlement, and protection for climate-displaced persons.</p>
 
-                <p><a href="JCIDMUNII_HRC_ChairReport1_Refugee.pdf" download style="color: var(--accent); text-decoration: underline;">Download Chair Report</a></p>
+                <p><a href="JCIDMUNII_HRC_ChairReport1_Refugee.pdf" download class="download-btn">Download Chair Report</a></p>
             </section>
         </div>
     </main>
 
     <footer class="footer">
-  <div class="footer-inner">·
+  <div class="footer-inner">
     <div class="footer-content">
       
       <div class="footer-col">
@@ -424,18 +443,12 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="#">Home</a>
-        <a href="#">Committees</a>
       </div>
 
       <div class="footer-col">
         <h4>Information</h4>
-        <a href="#">Address & Schedule</a>
-        <a href="#">About Us</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="#">Email Us</a>
+        <a href="Address-and-Schedule.html">Address & Schedule</a>
+        <a href="About-Us.html">About Us</a>
       </div>
 
     </div>
